@@ -1,13 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="tvJapan" customModuleProvider="target">
             <connections>
+                <outlet property="Done" destination="qCb-pn-KpU" id="7SL-3a-iNT"/>
+                <outlet property="inName" destination="uyK-7H-pHY" id="xXf-Ic-ATV"/>
+                <outlet property="inPwd" destination="rPS-zP-AMG" id="kbE-Jv-vRc"/>
+                <outlet property="uName" destination="UIj-xb-WPE" id="P0o-Fd-baf"/>
+                <outlet property="uPwd" destination="LJ0-ya-SH3" id="4aY-sd-DTt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +24,71 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIj-xb-WPE">
+                    <rect key="frame" x="15" y="75" width="345" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="HQF-Q1-xGT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCb-pn-KpU">
+                    <rect key="frame" x="30" y="222" width="315" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0k5-y9-eZz"/>
+                    </constraints>
+                    <state key="normal" title="Touch Me"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uyK-7H-pHY">
+                    <rect key="frame" x="15" y="40" width="345" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="nkp-w8-h9Z"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rPS-zP-AMG">
+                    <rect key="frame" x="15" y="116" width="345" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="jlW-mz-FQx"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJ0-ya-SH3">
+                    <rect key="frame" x="15" y="151" width="345" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="bnR-08-7km"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UIj-xb-WPE" firstAttribute="top" secondItem="uyK-7H-pHY" secondAttribute="bottom" constant="5" id="1gj-HM-Ser"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qCb-pn-KpU" secondAttribute="trailing" constant="30" id="34o-c5-f3E"/>
+                <constraint firstItem="uyK-7H-pHY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="4yj-7S-SIs"/>
+                <constraint firstItem="LJ0-ya-SH3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="ENU-xS-SFo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LJ0-ya-SH3" secondAttribute="trailing" constant="15" id="EQw-HL-7Hq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rPS-zP-AMG" secondAttribute="trailing" constant="15" id="Edq-Le-Bq7"/>
+                <constraint firstItem="uyK-7H-pHY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="FqS-dN-RAs"/>
+                <constraint firstItem="qCb-pn-KpU" firstAttribute="top" secondItem="LJ0-ya-SH3" secondAttribute="bottom" constant="50" id="IwH-py-0FO"/>
+                <constraint firstItem="rPS-zP-AMG" firstAttribute="top" secondItem="UIj-xb-WPE" secondAttribute="bottom" constant="20" id="NQE-Sv-UlK"/>
+                <constraint firstItem="UIj-xb-WPE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="Qqe-mh-nMi"/>
+                <constraint firstItem="qCb-pn-KpU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="X3G-XL-R6P"/>
+                <constraint firstItem="rPS-zP-AMG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="byD-2H-Nbx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UIj-xb-WPE" secondAttribute="trailing" constant="15" id="eDq-vU-AGN"/>
+                <constraint firstItem="LJ0-ya-SH3" firstAttribute="top" secondItem="rPS-zP-AMG" secondAttribute="bottom" constant="5" id="lT6-l0-UGP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uyK-7H-pHY" secondAttribute="trailing" constant="15" id="moK-4c-tQU"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
 </document>

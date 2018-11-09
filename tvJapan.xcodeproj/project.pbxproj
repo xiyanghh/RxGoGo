@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6D8C372A87774C4274DD1E5 /* Pods_tvJapan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77063E14733D5C140326DEF8 /* Pods_tvJapan.framework */; };
 		F3213BBC2194458E0004999E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3213BBB2194458E0004999E /* AppDelegate.swift */; };
-		F3213BBE2194458E0004999E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3213BBD2194458E0004999E /* ViewController.swift */; };
-		F3213BC12194458E0004999E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3213BBF2194458E0004999E /* Main.storyboard */; };
+		F3213BBE2194458E0004999E /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3213BBD2194458E0004999E /* IndexViewController.swift */; };
 		F3213BC3219445900004999E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3213BC2219445900004999E /* Assets.xcassets */; };
 		F3213BC6219445900004999E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3213BC4219445900004999E /* LaunchScreen.storyboard */; };
+		F3315813219532720065A8D0 /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3315812219532720065A8D0 /* RxTableViewController.swift */; };
+		F331581621953BE90065A8D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331581421953BE90065A8D0 /* LoginViewController.swift */; };
+		F331581721953BE90065A8D0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F331581521953BE90065A8D0 /* LoginViewController.xib */; };
+		F332101321951BDB008DFE56 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332101021951BDB008DFE56 /* BaseTabBarController.swift */; };
+		F332101421951BDB008DFE56 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332101121951BDB008DFE56 /* BaseViewController.swift */; };
+		F332101521951BDB008DFE56 /* BaseNavigationContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332101221951BDB008DFE56 /* BaseNavigationContorller.swift */; };
+		F332101921951EBD008DFE56 /* AppTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332101821951EBD008DFE56 /* AppTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AC663A98ADA7A576B38ADD5 /* Pods-tvJapan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvJapan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvJapan/Pods-tvJapan.debug.xcconfig"; sourceTree = "<group>"; };
+		30B094E8F874363E7884F52C /* Pods-tvJapan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvJapan.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvJapan/Pods-tvJapan.release.xcconfig"; sourceTree = "<group>"; };
+		77063E14733D5C140326DEF8 /* Pods_tvJapan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvJapan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3213BB82194458E0004999E /* tvJapan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvJapan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3213BBB2194458E0004999E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3213BBD2194458E0004999E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F3213BC02194458E0004999E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3213BBD2194458E0004999E /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		F3213BC2219445900004999E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3213BC5219445900004999E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3213BC7219445900004999E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3315812219532720065A8D0 /* RxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
+		F331581421953BE90065A8D0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F331581521953BE90065A8D0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F332101021951BDB008DFE56 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		F332101121951BDB008DFE56 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F332101221951BDB008DFE56 /* BaseNavigationContorller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationContorller.swift; sourceTree = "<group>"; };
+		F332101821951EBD008DFE56 /* AppTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D8C372A87774C4274DD1E5 /* Pods_tvJapan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A19B81BF93A80FBA46D90B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77063E14733D5C140326DEF8 /* Pods_tvJapan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96F6F7710DE9CF650820F368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AC663A98ADA7A576B38ADD5 /* Pods-tvJapan.debug.xcconfig */,
+				30B094E8F874363E7884F52C /* Pods-tvJapan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F3213BAF2194458E0004999E = {
 			isa = PBXGroup;
 			children = (
 				F3213BBA2194458E0004999E /* tvJapan */,
 				F3213BB92194458E0004999E /* Products */,
+				96F6F7710DE9CF650820F368 /* Pods */,
+				2A19B81BF93A80FBA46D90B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +91,43 @@
 			isa = PBXGroup;
 			children = (
 				F3213BBB2194458E0004999E /* AppDelegate.swift */,
-				F3213BBD2194458E0004999E /* ViewController.swift */,
-				F3213BBF2194458E0004999E /* Main.storyboard */,
+				F3213BBD2194458E0004999E /* IndexViewController.swift */,
+				F3315812219532720065A8D0 /* RxTableViewController.swift */,
+				F331581421953BE90065A8D0 /* LoginViewController.swift */,
+				F331581521953BE90065A8D0 /* LoginViewController.xib */,
+				F332101621951BEC008DFE56 /* Code */,
 				F3213BC2219445900004999E /* Assets.xcassets */,
 				F3213BC4219445900004999E /* LaunchScreen.storyboard */,
 				F3213BC7219445900004999E /* Info.plist */,
 			);
 			path = tvJapan;
+			sourceTree = "<group>";
+		};
+		F332100F21951BDB008DFE56 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F332101021951BDB008DFE56 /* BaseTabBarController.swift */,
+				F332101121951BDB008DFE56 /* BaseViewController.swift */,
+				F332101221951BDB008DFE56 /* BaseNavigationContorller.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F332101621951BEC008DFE56 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				F332101721951EA7008DFE56 /* Tools */,
+				F332100F21951BDB008DFE56 /* Base */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		F332101721951EA7008DFE56 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F332101821951EBD008DFE56 /* AppTools.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3213BCA219445900004999E /* Build configuration list for PBXNativeTarget "tvJapan" */;
 			buildPhases = (
+				C82C376FCF12E79B6A6E7C69 /* [CP] Check Pods Manifest.lock */,
 				F3213BB42194458E0004999E /* Sources */,
 				F3213BB52194458E0004999E /* Frameworks */,
 				F3213BB62194458E0004999E /* Resources */,
+				607D71A7AA87C4C5EBC4F84C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,33 +192,84 @@
 			files = (
 				F3213BC6219445900004999E /* LaunchScreen.storyboard in Resources */,
 				F3213BC3219445900004999E /* Assets.xcassets in Resources */,
-				F3213BC12194458E0004999E /* Main.storyboard in Resources */,
+				F331581721953BE90065A8D0 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		607D71A7AA87C4C5EBC4F84C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tvJapan/Pods-tvJapan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EZSwiftExtensions/EZSwiftExtensions.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZSwiftExtensions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvJapan/Pods-tvJapan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C82C376FCF12E79B6A6E7C69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tvJapan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3213BB42194458E0004999E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3213BBE2194458E0004999E /* ViewController.swift in Sources */,
+				F3213BBE2194458E0004999E /* IndexViewController.swift in Sources */,
+				F332101921951EBD008DFE56 /* AppTools.swift in Sources */,
+				F332101421951BDB008DFE56 /* BaseViewController.swift in Sources */,
+				F332101521951BDB008DFE56 /* BaseNavigationContorller.swift in Sources */,
+				F331581621953BE90065A8D0 /* LoginViewController.swift in Sources */,
 				F3213BBC2194458E0004999E /* AppDelegate.swift in Sources */,
+				F332101321951BDB008DFE56 /* BaseTabBarController.swift in Sources */,
+				F3315813219532720065A8D0 /* RxTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F3213BBF2194458E0004999E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3213BC02194458E0004999E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F3213BC4219445900004999E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,11 +397,13 @@
 		};
 		F3213BCB219445900004999E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC663A98ADA7A576B38ADD5 /* Pods-tvJapan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TPUDJ2P2BW;
+				DEVELOPMENT_TEAM = QB2VHYB4H6;
 				INFOPLIST_FILE = tvJapan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +417,13 @@
 		};
 		F3213BCC219445900004999E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B094E8F874363E7884F52C /* Pods-tvJapan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TPUDJ2P2BW;
+				DEVELOPMENT_TEAM = QB2VHYB4H6;
 				INFOPLIST_FILE = tvJapan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

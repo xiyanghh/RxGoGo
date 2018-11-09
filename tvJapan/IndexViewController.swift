@@ -90,6 +90,8 @@ class IndexViewController: BaseViewController {
         _ = self.rx.observeWeakly(String.self, "uName").subscribe(onNext: { (string) in
           print(string!)
         })
+        
+        
     }
     
 }

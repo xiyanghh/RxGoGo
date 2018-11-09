@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = .white
         self.window?.makeKeyAndVisible()
-        
-        
+        self.window?.rootViewController = BaseNavigationContorller(rootViewController: LoginViewController())
+        //RxTableViewController
         return true
     }
 

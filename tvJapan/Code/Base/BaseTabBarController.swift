@@ -19,19 +19,19 @@ class BaseTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        v1 = BaseNavigationContorller(rootViewController: WorkUnitsViewController())
-        v1.tabBarItem = UITabBarItem(title: "工作台", image: #imageLiteral(resourceName: "tab_work"), tag: 0)
+//        v1 = BaseNavigationContorller(rootViewController: WorkUnitsViewController())
+//        v1.tabBarItem = UITabBarItem(title: "工作台", image: #imageLiteral(resourceName: "tab_work"), tag: 0)
+//
+//        v2 = BaseNavigationContorller(rootViewController: OrderViewController())
+//        v2.tabBarItem = UITabBarItem(title: "订单", image: #imageLiteral(resourceName: "tab_order"), tag: 1)
+//
+//        v3 = BaseNavigationContorller(rootViewController: CustomerViewController())
+//        v3.tabBarItem = UITabBarItem(title: "客户", image: #imageLiteral(resourceName: "tab_customer"), tag: 2)
+//
+//        v4 = BaseNavigationContorller(rootViewController: MyViewController())
+//        v4.tabBarItem = UITabBarItem(title: "我的", image: #imageLiteral(resourceName: "tab_my"), tag: 3)
         
-        v2 = BaseNavigationContorller(rootViewController: OrderViewController())
-        v2.tabBarItem = UITabBarItem(title: "订单", image: #imageLiteral(resourceName: "tab_order"), tag: 1)
-        
-        v3 = BaseNavigationContorller(rootViewController: CustomerViewController())
-        v3.tabBarItem = UITabBarItem(title: "客户", image: #imageLiteral(resourceName: "tab_customer"), tag: 2)
-        
-        v4 = BaseNavigationContorller(rootViewController: MyViewController())
-        v4.tabBarItem = UITabBarItem(title: "我的", image: #imageLiteral(resourceName: "tab_my"), tag: 3)
-        
-        self.viewControllers = [v1, v3]
+//        self.viewControllers = [v1, v3]
     }
 
     override func didReceiveMemoryWarning() {

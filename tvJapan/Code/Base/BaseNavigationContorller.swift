@@ -7,15 +7,9 @@
 //
 
 import UIKit
-import ReactiveCocoa
-import ReactiveSwift
 import SnapKit
 import EZSwiftExtensions
-import Kingfisher
 import SwiftyJSON
-import CryptoSwift
-import Then
-import MJRefresh
 
 class BaseNavigationContorller: UINavigationController {
 
@@ -23,7 +17,7 @@ class BaseNavigationContorller: UINavigationController {
         super.viewDidLoad()
         
         let navBar = UINavigationBar.appearance()
-        navBar.barTintColor = colorMain
+//        navBar.barTintColor = colorMain
         navBar.tintColor = UIColor.white
         navBar.isTranslucent = false
         navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
