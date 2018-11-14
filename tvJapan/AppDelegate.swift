@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,7 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = .white
         self.window?.makeKeyAndVisible()
-        self.window?.rootViewController = BaseNavigationContorller(rootViewController: LoginViewController())
+        
+        
+        
+        self.window?.rootViewController = BaseNavigationContorller(rootViewController: RxFeedBackViewController())
         //RxTableViewController
         return true
     }

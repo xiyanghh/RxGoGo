@@ -23,8 +23,12 @@ def common_pods_for_target
 #    pod 'ReachabilitySwift'  #网络检测
 #    pod 'ReactiveCocoa'  #RAC
     pod 'RxSwift'        #RxSwift的必备库
-    pod 'RxCocoa'        #对 UIKit Foundation 进行 Rx 化
-#    pod 'RxDataSources'  #优雅的使用tableView的数据源方法
+    pod 'RxCocoa'        #UIKit Foundation 进行 Rx 化
+    pod 'RxSwiftExt'
+#    pod 'RxSwiftX'   #Rx UITableViewDelegate拓展  国人
+    pod 'RxDataSources'  #Rx 使用tableView的数据源方法
+#    pod 'ReactorKit'     #配合Rx使用的一种架构
+#    https://beeth0ven.github.io/RxSwift-Chinese-Documentation/content/architecture/reactorkit.html
 
     #UI
 #    pod 'EmptyDataSet-Swift'  #空数据
