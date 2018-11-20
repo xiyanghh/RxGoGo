@@ -24,19 +24,75 @@ enum Event {
 //    ) -> Observable<State>
 
 
+extension Reactive where Base: UILabel{
+    
+    public var fontSize: Binder<CGFloat>{
+        return Binder(self.base, binding: { (label, fontSize) in
+            label.font = UIFont.systemFont(ofSize: fontSize)
+        })
+    }
+    
+    public var text: Binder<String?>{
+        return Binder(self.base) { label, text in
+            label.text = text
+        }
+    }
+    
+    public var attributedText: Binder<NSAttributedString?>{
+        return Binder(self.base) { label, text in
+            return label.attributedText = text
+        }
+    }
+    
+}
+
+
 class RxFeedBackViewController: BaseViewController {
     
-    var username = Variable("aa")
-    var inName: UITextField!
+    var username: String = ""
+    
+    var userName =  Variable("aa")
+    
+    var inName: UILabel!
+    
+      let disposeBag =  DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
 
+        self.inName = UILabel()
+        self.inName.backgroundColor = .red
+        self.view.addSubview(inName)
+        self.inName.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
+            make.size.equalTo(CGSize(width: 200, height: 30))
+        }
+        
+//        _ = self.inName.rx.textInput <-> BehaviorRelay(value: userName) 未成功
+//        self.userName.asObservable().bind(to: inName.rx.text).disposed(by: disposeBag)
+//        self.inName.rx.text.orEmpty.bind(to: userName).disposed(by: disposeBag)
+        
+//        self.inName.rx.text.orEmpty
+//            .map{ str in str.count }
+//            .subscribe(onNext: { num in
+//            print(num)
+////            print("um = \(self.userName.value)")
+//        }).disposed(by: disposeBag)
         
         
-//        _ = self.inName.rx.textInput <-> BehaviorRelay(value: username)
         
+        
+        
+//        let observer: Binder<String> = Binder(inName) { (view, text) in
+//            view.text = text
+//        }
+        
+        let observable = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
+        observable
+            .map{ "当前索引数:\($0)" }
+            .bind(to: inName.rx.text)
+            .disposed(by: disposeBag)
         
         // Do any additional setup after loading the view.
         
@@ -57,30 +113,30 @@ class RxFeedBackViewController: BaseViewController {
 //        }.disposed(by: DisposeBag())
         
         //一个无限序列（每隔0.1秒创建一个序列数 ）
-        let infiniteInterval$ = Observable<Int>
-            .interval(0.1, scheduler: MainScheduler.instance)
-            .do(
-                onNext: { print("infinite$: \($0)") },
-                onSubscribe: { print("开始订阅 infinite$")},
-                onDispose: { print("销毁 infinite$")}
-        )
-        
-        //一个有限序列（每隔0.5秒创建一个序列数，共创建三个 ）
-        let limited$ = Observable<Int>
-            .interval(0.5, scheduler: MainScheduler.instance)
-            .take(2)
-            .do(
-                onNext: { print("limited$: \($0)") },
-                onSubscribe: { print("开始订阅 limited$")},
-                onDispose: { print("销毁 limited$")}
-        )
-    
-        //使用using操作符创建序列
-        let o: Observable<Int> = Observable.using({ () -> AnyDisposable in
-            return AnyDisposable(infiniteInterval$.subscribe())
-        }, observableFactory: { _ in return limited$ }
-        )
-        o.subscribe()
+//        let infiniteInterval$ = Observable<Int>
+//            .interval(0.1, scheduler: MainScheduler.instance)
+//            .do(
+//                onNext: { print("infinite$: \($0)") },
+//                onSubscribe: { print("开始订阅 infinite$")},
+//                onDispose: { print("销毁 infinite$")}
+//        )
+//
+//        //一个有限序列（每隔0.5秒创建一个序列数，共创建三个 ）
+//        let limited$ = Observable<Int>
+//            .interval(0.5, scheduler: MainScheduler.instance)
+//            .take(2)
+//            .do(
+//                onNext: { print("limited$: \($0)") },
+//                onSubscribe: { print("开始订阅 limited$")},
+//                onDispose: { print("销毁 limited$")}
+//        )
+//
+//        //使用using操作符创建序列
+//        let o: Observable<Int> = Observable.using({ () -> AnyDisposable in
+//            return AnyDisposable(infiniteInterval$.subscribe())
+//        }, observableFactory: { _ in return limited$ }
+//        )
+//        o.subscribe()
     
         
         
@@ -114,3 +170,5 @@ class AnyDisposable: Disposable {
     */
 
 }
+
+

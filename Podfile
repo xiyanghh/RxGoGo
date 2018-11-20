@@ -12,33 +12,42 @@ def common_pods_for_target
 
     #Swift
     pod 'Alamofire'
-    pod 'SnapKit'
-#    pod 'Kingfisher'  #图片加载库
-    pod 'SnapKit'     #视图约束库
+    pod 'Moya'   #配合Alamofire使用
+    pod 'Moya/RxSwift'
+    pod 'ObjectMapper'
+    pod 'Moya-ObjectMapper'
+    pod 'Result'
     pod 'SwiftyJSON'
-    pod 'EZSwiftExtensions'
-    pod 'IQKeyboardManagerSwift'
-#    pod 'CryptoSwift'  #加密
     
-#    pod 'ReachabilitySwift'  #网络检测
-#    pod 'ReactiveCocoa'  #RAC
-    pod 'RxSwift'        #RxSwift的必备库
-    pod 'RxCocoa'        #UIKit Foundation 进行 Rx 化
+    #工具
+    pod 'IQKeyboardManagerSwift'
+#    pod 'CryptoSwift'           #加密
+#    pod 'ReachabilitySwift'     #网络检测
+
+    #Rx
+#    pod 'ReactiveCocoa'     #RAC
+    pod 'RxSwift'           #RxSwift的必备库
+    pod 'RxCocoa'           #UIKit Foundation 进行 Rx 化
     pod 'RxSwiftExt'
-#    pod 'RxSwiftX'   #Rx UITableViewDelegate拓展  国人
-    pod 'RxDataSources'  #Rx 使用tableView的数据源方法
-#    pod 'ReactorKit'     #配合Rx使用的一种架构
+#    pod 'RxSwiftX'         #Rx UITableViewDelegate拓展  国人
+    pod 'RxDataSources'    #Rx 使用tableView的数据源方法
+#    pod 'ReactorKit'       #配合Rx使用的一种架构
 #    https://beeth0ven.github.io/RxSwift-Chinese-Documentation/content/architecture/reactorkit.html
 
+    #Ext
+    pod 'SnapKit'           #视图约束库
+    pod 'EZSwiftExtensions'
+#    pod 'Kingfisher'       #图片加载库
+#    pod 'Then'             #提供快速初始化的语法
+#    pod 'Reusable'         #帮助我们优雅的使用自定义cell和view,不再出现Optional
+
     #UI
-#    pod 'EmptyDataSet-Swift'  #空数据
-#    pod 'Then'     #提供快速初始化的语法
-#    pod 'Reusable' #帮助我们优雅的使用自定义cell和view,不再出现Optional
-#    pod 'PPBadgeViewSwift'  #角标
-#    pod 'CVCalendar'  #日历
+#    pod 'EmptyDataSet-Swift'   #空数据
+#    pod 'PPBadgeViewSwift'     #角标
+#    pod 'CVCalendar'           #日历
 
     #OC
-#    pod 'SVProgressHUD' #简单易用的HUD
+#    pod 'SVProgressHUD'        #简单易用的HUD
 #    pod 'MJRefresh' 
     
    
