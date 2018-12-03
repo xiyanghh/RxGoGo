@@ -8,12 +8,13 @@
 
 import Foundation
 import ObjectMapper
+import Moya_ObjectMapper
 
 struct GitHubRepositories: Mappable{
 
     var totalCount: Int!
     var incompleteResults: Bool!
-    var items: [GitHubRepositories]!
+    var items: [GitHubRepository]!
     
     init(){
         totalCount = 0
